@@ -51,6 +51,7 @@ function add(x, y) {
 //     console.log(message.toUpperCase(message))
 // }
 
+
 // Coding Exercise 37 : Multiple Args Exercise
 
 // function isSnakeEyes(num1, num2) {
@@ -60,9 +61,6 @@ function add(x, y) {
 //         console.log("Not Snake Eyes!")
 //     }
 // }
-
-// let dice = Math.floor(Math.random() * 6) + 1;
-// isSnakeEyes(dice, dice);
 
 
 // Coding Exercise 38 : Return Value Practice
@@ -91,4 +89,33 @@ function add(x, y) {
 //     } else {
 //         return arr[arr.length - 1];
 //     }
+// }
+
+
+// Coding Exercise 41 : Capitalize Exercise
+
+// function capitalize(word) {
+//     return word[0].toUpperCase() + word.slice(1);
+// }
+
+
+// Coding Exercise 42 : Sum Array Exercise
+
+// function sumArray(arr) {
+//     let total = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         total += arr[i]
+//     } return total;
+// }
+
+
+// Coding Exercise 43 : Days Of The Week Exercise
+
+// let week =['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+// function returnDay(day) {
+//   if (0 >= day || 7 < day) {
+//     return null;
+//   } else {
+//     return day = week[day - 1];
+//   }
 // }
