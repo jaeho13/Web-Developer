@@ -36,3 +36,15 @@ const meow2 = cat.meow;
 //         return num * 4;
 //     }
 // }
+
+
+// Coding Exercise 46 : Egg Laying Exercise
+
+// const hen = {
+//     name: 'Helen',
+//     eggCount: 0,
+//     layAnEgg() {
+//         this.eggCount += 1;
+//         return "EGG";
+//     }
+// }
