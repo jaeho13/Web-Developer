@@ -14,9 +14,23 @@
 // }
 // birdWatch()
 
-for (let i = 0; i < 5; i++) {
-    let msg = "SeongGong";
-    console.log(msg)
+// for (let i = 0; i < 5; i++) {
+//     let msg = "SeongGong";
+//     console.log(msg)
+// }
+// console.log(msg)
+// console.log(i)
+
+function bankRoberry() {
+    const heroes = ['Spiderman', 'Wolverine', 'Black Panther', 'Batwomon']
+    function cryForHelp() {
+        let color = 'purple';
+        function inner() {
+            for (let hero of heroes) {
+                console.log(`PLEASE HELP US, ${hero.toUpperCase()}`)
+            }
+        }
+        inner();
+    }
+    cryForHelp();
 }
-console.log(msg)
-console.log(i)
