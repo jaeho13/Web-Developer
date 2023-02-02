@@ -5,7 +5,6 @@ button.addEventListener('click', function () {
     const newColor = makeRandColor();
     document.body.style.backgroundColor = newColor;
     h1.innerText = newColor;
-    Element.style.color = "red";
 })
 
 const makeRandColor = () => {
@@ -15,12 +14,14 @@ const makeRandColor = () => {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
-function changeTextColor() {
-    const h1 = document.getElementById('h1');
+const h1s = document.querySelectorAll('h1');
 
-    element.style.color = 'blue'
+for (let h1 of h1s) {
+    h1.addEventListener('click', function () {
+        h1.style.backgroundColor = makeRandColor();
+        h1.style.color = makeRandColor();
+    })
 }
-
 
 
 // function changeTextColor() {
