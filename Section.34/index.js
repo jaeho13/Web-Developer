@@ -6,7 +6,14 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'))
 
 app.get('/', (req, res) => {
-    res.render('home.ejs')
+    res.render('home')
+})
+
+app.get('/cats', (req, res) => {
+    const cats = [
+        'Blue', 'Rocket', 'Monty', 'Stephanie', 'Winston'
+    ]
+    res.render('cats', { cats })
 })
 
 app.get('/r/:subreddit', (req, res) => {
