@@ -1,0 +1,13 @@
+파일 이름 보기 show dbs
+파일 생성하기 use 만들 파일 이름
+파일 찾기 db.찾는 파일 이름.find()
+파일 내용 추가하기 db.파일 이름.insertOne({name: "Charlie", age: 3, breed: "Corgi", catFriendly: true})
+파일 내용 바꾸기 db.파일 이름.updateOne({name: ㅁㅁㅁ}, {$set: {age: ㅁㅁㅁ, breed: ㅁㅁㅁ}} )
+파일에 내용 추가하기 db.파일 이름.updateMany({name: ㅁㅁㅁ}, {$set: {age: ㅁㅁㅁ, breed: ㅁㅁㅁ}})
+파일에 현재 날짜 추가하기 db.파일 이름.updateOne({age: 6}, {$set: {age:7}, $currentDate: {lastChanged: true}})
+파일 내용 삭제하기 db.파일 이름.deleteOne({name: 'Blue Steele'})
+파일 여러 내용 삭제하기 db.파일 이름.deleteMany({isAvailable: false})
+파일 모든 내용 삭제하기 db.파일 이름.deleteMany({})
+조건에 맞는 파일 찾기 db.파일 이름.find({age: {$gt: 8}}) //나이가 8살 보다 많은 강아지 찾기 gt = Greater Than, gte = Greater Than or Equal, lt = Less Than, lte = Less Than or Equal
+파일 안에 어떤 값이 포함되어 있는 문서 선택 db.파일 이름.find({breed: {$in: ['Mutt', 'Corgi']}}) //일치하는 내용 찾기 {$in: [찾고자 하는 종류]}
+파일 안에 어떤 값이 없는 문서 선택 db.파일 이름.find({breed: {$nin: ['Mutt', 'Corgi']}}) //일치하는 않는 내용 찾기 {$nin: [찾고자 하지 않는 종류]}
